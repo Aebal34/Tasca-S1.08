@@ -47,6 +47,8 @@ public class App {
 				})
 				.forEach(obj -> System.out.println(obj));
 		
+		System.out.println(); //For better reading
+		
 		list.stream()
 		.filter(obj -> {
 			return ((obj instanceof String)&&((String)obj).matches(".*\\d.*"))

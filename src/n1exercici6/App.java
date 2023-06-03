@@ -12,7 +12,7 @@ public class App {
 		list.add("This");
 		list.add("in not a");
 		list.add(23);
-		list.add("number, instead");
+		list.add("number, instead ");
 		list.add("it's just text.");
 		
 		List<Object> orderedList = list.stream()

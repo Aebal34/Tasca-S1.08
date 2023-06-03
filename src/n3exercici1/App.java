@@ -44,7 +44,7 @@ public class App {
 		
 		System.out.println();//To separate exercises
 		
-		//4. We filter the list to show all students with grade less than 5 and not from PHP
+		//4. We filter the list to show all students with grade greater or equal than 5 and not from PHP
 		students.stream()
 					.filter(student -> student.getGrade()>= 5
 										&& !student.getCourse().equals("PHP"))

@@ -17,8 +17,9 @@ public class App {
 		names.add("Didac");
 		names.add("Abel");
 		
-		List<String> filteredNames = names.stream().filter(s -> s.charAt(0)== 'A' && s.length()== 3)
-							  					   .collect(Collectors.toList());
+		List<String> filteredNames = names.stream()
+											.filter(s -> s.charAt(0)== 'A' && s.length()== 3)
+					  					   	.collect(Collectors.toList());
 		
 		System.out.println(filteredNames);
 	}

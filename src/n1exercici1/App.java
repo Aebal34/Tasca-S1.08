@@ -13,12 +13,10 @@ public class App {
 		strings.add("Terminal");
 		strings.add("Gato");
 		
-		List<String> filteredStrings = new ArrayList<String>();
-		
 		//Lambda expression
-		filteredStrings = strings.stream()
-									.filter(string -> string.contains("o"))
-									.collect(Collectors.toList());
+		List<String> filteredStrings = strings.stream()
+												.filter(string -> string.contains("o"))
+												.collect(Collectors.toList());
 		
 		System.out.println(filteredStrings);
 	}
